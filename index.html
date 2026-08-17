@@ -3,136 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A dummy academic portfolio for Guhan Thiagarajan."
-    />
-    <title>Guhan Thiagarajan | Research portfolio</title>
+    <meta name="description" content="A privacy-safe portfolio template for work, notes, and a résumé." />
+    <meta name="theme-color" content="#121212" />
+    <title>Portfolio — About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="about">
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header">
       <nav class="site-nav" aria-label="Primary navigation">
-        <a class="wordmark" href="#about" aria-label="Guhan Thiagarajan home">
-          <span class="wordmark-mark">GT</span>
-          <span>Guhan Thiagarajan</span>
+        <a class="site-mark" href="index.html" aria-label="Portfolio home">
+          <span class="mark-dot" aria-hidden="true"></span>
+          <span>Portfolio</span>
         </a>
         <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#news">News</a>
-          <a href="#research">Research</a>
-          <a href="#contact">Contact</a>
-          <button class="theme-toggle" type="button" aria-label="Switch color theme">
-            <span aria-hidden="true">◐</span>
+          <a href="index.html" aria-current="page">About</a>
+          <a href="notes.html">Notes</a>
+          <a href="work.html">Work</a>
+          <a href="cv.html">CV</a>
+          <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+            <span class="theme-icon" aria-hidden="true">☼</span>
           </button>
         </div>
       </nav>
+      <div class="scroll-progress" aria-hidden="true"><span></span></div>
     </header>
 
     <main id="main">
-      <section class="intro section" id="about" aria-labelledby="intro-title">
-        <div class="intro-copy">
-          <p class="eyebrow">QUANTUM TRANSPORT · UW</p>
-          <h1 id="intro-title">Guhan<br /><span>Thiagarajan</span></h1>
-          <p class="role">Student researcher in electrical and computer engineering</p>
-          <p>
-            I study how electronic structure, contacts, and environmental scattering affect
-            charge transport through molecular systems. My current work uses quantum
-            transport models to compare transmission through DNA structures.
+      <section class="hero page-shell" aria-labelledby="hero-title">
+        <div class="hero-copy" data-reveal="rise">
+          <p class="status"><span></span> Open to interesting problems</p>
+          <h1 id="hero-title">Your Name</h1>
+          <p class="hero-role">Designer · Researcher · Builder</p>
+          <p class="hero-lede">
+            A concise introduction belongs here: what you care about, the kind of work you do,
+            and the questions you want to explore next.
           </p>
-          <p>
-            This is a dummy portfolio site built with GitHub Pages. It is meant to be a
-            clean starting point for research updates, projects, publications, and future
-            work.
-          </p>
-          <div class="intro-actions">
-            <a class="button button-primary" href="#research">View research</a>
-            <a class="button button-quiet" href="https://github.com/Guhanst9" target="_blank" rel="noreferrer">GitHub profile ↗</a>
+          <div class="hero-actions">
+            <a class="text-link" href="work.html">See selected work <span aria-hidden="true">↗</span></a>
+            <a class="text-link muted-link" href="cv.html">View résumé</a>
           </div>
         </div>
 
-        <aside class="signal-card" aria-label="Decorative Guhan Thiagarajan monogram">
-          <div class="signal-grid" aria-hidden="true"></div>
-          <div class="monogram">GT</div>
-          <p>Research notebook<br />2026</p>
-        </aside>
-      </section>
-
-      <section class="section news-section" id="news" aria-labelledby="news-title">
-        <div class="section-heading">
-          <p class="eyebrow">CURRENT NOTES</p>
-          <h2 id="news-title">News</h2>
+        <div class="hero-art" data-parallax aria-label="Abstract animated portfolio artwork">
+          <canvas id="field-canvas" aria-hidden="true"></canvas>
+          <div class="art-label art-label-top">Ideas in motion</div>
+          <div class="art-orbit" aria-hidden="true"></div>
+          <div class="art-label art-label-bottom">Scroll to explore ↓</div>
         </div>
-        <ol class="news-list">
-          <li>
-            <time datetime="2026-08">Aug 2026</time>
-            <p>Completed HOMO and LUMO transmission sweeps for two DNA structures at three decoherence strengths.</p>
-          </li>
-          <li>
-            <time datetime="2026-08">Aug 2026</time>
-            <p>Prepared consistent linear- and log-scale transmission figures for the project summary.</p>
-          </li>
-          <li>
-            <time datetime="2026-01">Jan 2026</time>
-            <p>Started a public research portfolio with GitHub Pages.</p>
-          </li>
-        </ol>
       </section>
 
-      <section class="section research-section" id="research" aria-labelledby="research-title">
-        <div class="section-heading split-heading">
-          <div>
-            <p class="eyebrow">SELECTED WORK</p>
-            <h2 id="research-title">Research</h2>
+      <section class="content-section page-shell" aria-labelledby="about-title">
+        <div class="section-index" data-reveal="clip">About</div>
+        <div class="section-content" data-reveal="rise">
+          <h2 id="about-title">Curious by default.<br />Clear on purpose.</h2>
+          <div class="prose-columns">
+            <p>
+              Use this space for a short, human introduction. Keep it specific enough to be
+              memorable and broad enough to grow with your work.
+            </p>
+            <p>
+              The site is intentionally free of personal details. Add only the information you
+              are comfortable publishing when you are ready.
+            </p>
           </div>
-          <p class="section-note">A few projects, written for people outside the lab too.</p>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card project-card-featured">
-            <p class="project-tag">Quantum transport</p>
-            <h3>DNA transmission with DOS-weighted decoherence</h3>
-            <p>
-              A comparison of HOMO and LUMO transport in xx7tg6 and xx7sm0, including how the decoherence parameter D0 changes transmission features.
-            </p>
-            <a href="#contact">Project summary coming soon <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="project-card">
-            <p class="project-tag">Portfolio</p>
-            <h3>Research notes and visual summaries</h3>
-            <p>
-              A place to collect short project explanations, figures, and links to work in progress.
-            </p>
-            <a href="#contact">Dummy page <span aria-hidden="true">→</span></a>
-          </article>
-
-          <article class="project-card">
-            <p class="project-tag">Next</p>
-            <h3>Future projects</h3>
-            <p>
-              This card is intentionally open. It can become a publication, a course project, or a new research direction.
-            </p>
-            <a href="#contact">Add your next project <span aria-hidden="true">→</span></a>
-          </article>
         </div>
       </section>
 
-      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-        <p class="eyebrow">GET IN TOUCH</p>
-        <h2 id="contact-title">A small site is enough to start.</h2>
-        <p>
-          Replace this text with a university email, a CV link, research links, and any information you want to share publicly.
-        </p>
-        <a class="button button-primary" href="https://github.com/Guhanst9/portfolio" target="_blank" rel="noreferrer">Open this repository ↗</a>
+      <section class="content-section page-shell" aria-labelledby="latest-title">
+        <div class="section-index" data-reveal="clip">Latest</div>
+        <div class="section-content">
+          <div class="section-heading-row" data-reveal="rise">
+            <h2 id="latest-title">Recent notes</h2>
+            <a class="quiet-link" href="notes.html">View all</a>
+          </div>
+          <ol class="entry-list">
+            <li data-reveal="line">
+              <time datetime="2026-08">Aug 2026</time>
+              <a href="notes.html#note-one">A placeholder for a recent milestone or idea</a>
+            </li>
+            <li data-reveal="line">
+              <time datetime="2026-07">Jul 2026</time>
+              <a href="notes.html#note-two">A second update can link to a longer note</a>
+            </li>
+            <li data-reveal="line">
+              <time datetime="2026-06">Jun 2026</time>
+              <a href="notes.html#note-three">Use this area for talks, launches, or field notes</a>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="content-section page-shell" aria-labelledby="selected-title">
+        <div class="section-index" data-reveal="clip">Selected</div>
+        <div class="section-content">
+          <div class="section-heading-row" data-reveal="rise">
+            <h2 id="selected-title">Work worth sharing</h2>
+            <a class="quiet-link" href="work.html">View all</a>
+          </div>
+          <div class="work-preview">
+            <a class="work-row" href="work.html#project-one" data-reveal="line">
+              <span class="work-number">01</span>
+              <span><strong>Project title goes here</strong><small>Research · Design · 2026</small></span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="work-row" href="work.html#project-two" data-reveal="line">
+              <span class="work-number">02</span>
+              <span><strong>Another meaningful project</strong><small>Prototype · Systems · 2025</small></span>
+              <span class="work-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing page-shell" data-reveal="rise">
+        <p>That is the short version.</p>
+        <a href="work.html">Keep exploring <span aria-hidden="true">→</span></a>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <p>Built as a GitHub Pages demo for Guhan Thiagarajan.</p>
-      <p><a href="#about">Back to top ↑</a></p>
+    <footer class="site-footer page-shell">
+      <p>Portfolio template · 2026</p>
+      <a href="#main">Back to top ↑</a>
     </footer>
 
     <script src="script.js"></script>
