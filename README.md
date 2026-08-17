@@ -1,12 +1,15 @@
-# Portfolio template
+# Academic portfolio template
 
-A privacy-safe, multi-page portfolio built with plain HTML, CSS, and JavaScript for GitHub Pages.
+A compact, privacy-safe portfolio inspired by a classic academic site layout.
 
 ## Pages
 
-- `index.html` — introduction and selected highlights
-- `notes.html` — updates and short notes
-- `work.html` — project archive
-- `cv.html` — printable résumé
+- `index.html` — About
+- `news.html` — News archive
+- `publications.html` — Publications grouped by year
+- `projects.html` — Categorized project cards
+- `cv.html` — Printable CV
 
-Replace the placeholder copy only with information you are comfortable publishing. The site includes a dark/light theme, scroll progress, reveal animations, a canvas hero, reduced-motion support, and responsive layouts.
+All identity, publication, project, and image content is placeholder text. The shared header includes a light/dark mode toggle and scroll progress indicator.
+
+Replace the placeholder `https://example.com/your-cv.pdf` URL in `cv.html` with the public link to your real PDF.
